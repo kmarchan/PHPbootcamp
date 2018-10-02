@@ -4,44 +4,66 @@
 			body {
 				background-color: rgb(81, 79, 82);
 			}
-			div {
-				box-shadow: 10px 10px 5px black;
-				background-color: rgb(145, 143,146);
-				border-radius: 25px;
+			p {
+				position: relative;
+				top: 10px;
+				left: 10px;
+				line-height: 25px;
+				display: inline;
+				font-family: Arial, Helvetica, sans-serif;
 			}
-			span {
-				display: inline-block;
-				box-shadow: 10px 10px 5px black;
-				background-color: rgb(145, 143,146);
-				border-radius: 25px;
-			}
-			div.popup {
+			.popup {
+				position: relative;
 				background-color: rgb(138, 253, 143);
+				box-shadow: 10px 10px 5px black;
+				top: -10%;
+				left: 15%;
+				border-radius: 20px;
 				color: black;
+				width: 500px;
+				height: 138px;
 			}
-			div.header {
+			.header {
+				box-shadow: 10px 10px 5px black;
 				margin: auto;
-				border-radius: 25px;
+				border-radius: 20px;
 				width: 70%;
 				height: 170px;
 				background-color: rgb(145, 143,146);
 			}
-			.mainbody {
-				background-color: rgb(81, 79, 82);
-				box-shadow: 0 0 0  rgb(81, 79, 82);
-			}
+			.space {
+				height: 10px;
+				visibility: hidden;
+			} 
 			.leftmenue {
-				display: inline-block;
+				border-radius: 20px;
+				top: 150px;
+				float: left;
+				position: relative;
+				left: 40%;
+				top: 20%;
+				box-shadow: 10px 10px 5px black;
+				background-color: rgb(145, 143,146);
 				height: 415px;
 				width: 138px;
 			}
 			.centrepanel {
-				display: inline-block;
+				float: left;
+				border-radius: 20px;
+				position: relative;
+				left: 50%;
+				box-shadow: 10px 10px 5px black;
+				background-color: rgb(145, 143,146);
 				height: 567px;
 				width: 995px;
 			}
 			.rightmenue {
-				display: inline-block;
+				float: left;
+				position: relative;
+				left: 60%;
+				border-radius: 25px;
+				box-shadow: 10px 10px 5px black;
+				background-color: rgb(145, 143,146);
 				height: 415px;
 				width: 138px;
 			}
@@ -55,11 +77,42 @@
 				clear: both;
 				display: table;
 			}
+			.border {
+				position: relative;
+				top: 5px;
+				left: 20%;
+				border: 5px solid red;
+				height: 78px;
+				width: 78px;
+			}
+			#box {
+				position: relative;
+				top: 5px;
+				left: 15%;
+				width: 96px;
+				height: 48px;
+				}
+			.boxes {
+				width: 100%;
+				height: 100%; 
+				float: left;
+				text-align: center;
+				}
+			.rows {
+				width: 33.3%;
+				height: 33%;    
+				float: left;
+			}
+			#tbig {
+				font-family: 'Times New Roman', Times, serif;
+				font-size: 25px;
+				line-height: 20px;
+			}
 			#day_of_the_42 {
 				position: relative;
 				bottom: 35px;
 				left: 1%;
-				border-radius: 25px;
+				border-radius: 20px;
 				height: 130px;
 			}
 			#loupe {
@@ -80,32 +133,94 @@
 				position: relative;
 				bottom: 150px;
 			}
-			/* img {
-				padding-top: 10px;
+			#ft {
+				position: relative;
+				top: 10px;
+				left: 10px;
+				margin: auto;
+				height: 547px;
+				width: 975px;
+			}
+			#buttons {
+				padding-top: 5px;
+				padding-left: 20%;
 				border-radius: 25px;
-				height: 130px;
-			} */
+				height: 77px;
+			}
+			input {
+				position: relative;
+				left: 10px;
+			}
+			button {
+				position: relative;
+				left: 10px;
+			}
+			#buttonsr {
+				padding-top: 10px;
+				padding-left: 30%;
+				border-radius: 20px;
+				height: 80px;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="header">
 			<img id ="day_of_the_42" src="resources/day_of_the_42.png" alt="Day day_of_the_42">
 			<img id ="loupe" src="resources/loupe.png" alt="Look Up">
-			<img id ="reload" src="resources/reload.png" alt="Reload">
-			<img id ="close" src="resources/close.gif" alt="Close">
+			<a href="https://www.disney.com">
+				<img id ="reload" src="resources/reload.png" alt="Reload">
+			</a>
+			<a href="https://www.relaischateaux.com/us/">
+				<img id ="close" src="resources/close.gif" alt="Close">
+			</a>
 		</div>
+		<div class="space"></div>
 		<div class="row">
-			<span class="leftmenue">
-
-			</span>
-			<!-- </div> -->
-			<span class="centrepanel">
-
-			</span>
-			<!-- </div> -->
-			<span class="rightmenue">
-
-			</span>
+			<div class="leftmenue">
+				<img id="buttons" src="resources/arrow.png" alt="Advance">
+				<img id="buttons" src="resources/main.png" alt="Take">
+				<div class="border">
+					<img src="resources/oeil.png" alt="Look">
+				</div>
+				<img id="buttons" src="resources/outil.png" alt="Use">
+				<img id="buttons" src="resources/chat-icon.png" alt="Speak">
+			</div>
+			<div class="centrepanel">
+				<img usemap="clust" id="ft" src="resources/cluster.jpg" alt="Cluster">
+				<map name="clust">
+					<area shape="rect" coords="300, 300, 450, 550"
+					href="http://www.ikea.com" target="_blank" alt="chair">
+					<area shape="rect" coords="680, 300, 1000, 450"
+					href="http://www.apple.com" target="_blank" alt="chair">
+				</map>
+			</div>
+			<div class="rightmenue">
+				<img id="buttonsr" src="resources/book.png" alt="book">
+				<img id="buttons" src="resources/towel.png" alt="Towel">
+				<div id="box">
+						<div class="rows">
+							<div class="boxes"><img src="resources/brick.jpg" alt="brick"></div>
+							<div class="boxes"><img src="resources/brick.jpg" alt="brick"></div>
+							<div class="boxes"><img src="resources/brick.jpg" alt="brick"></div>
+						</div>
+						<div class="rows">
+							<div class="boxes"><img src="resources/brick.jpg" alt="brick"></div>
+							<div class="boxes"><img src="resources/brick.jpg" alt="brick"></div>
+							<div class="boxes"><img src="resources/brick.jpg" alt="brick"></div>
+						</div>
+						<div class="rows">
+							<div class="boxes"><img src="resources/brick.jpg" alt="brick"></div>
+							<div class="boxes"><img src="resources/brick.jpg" alt="brick"></div>
+							<div class="boxes"><img src="resources/brick.jpg" alt="brick"></div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="popup">
+				<p>Vous</p><p id="tbig"> entrez </p><p>alors dans une grande piece remplie</p> <br />
+				<p style="top: 1px; text-shadow:12px 4px 4px #ff0000;">d'ordinateurs...</p> <br />
+				<p style="top: 1px;"><i>- Bonjour, vous êtes nouveau ici ?</p></i> <br />
+				<input class="inputbox" size="57"> <button class="buttonbox" type="button">Repondre</button>
 		</div>
 	</body>
 </html>
