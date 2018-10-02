@@ -1,0 +1,160 @@
+body {
+    background-color: rgb(81, 79, 82);
+}
+p {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    line-height: 25px;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.popup {
+    position: relative;
+    background-color: rgb(138, 253, 143);
+    box-shadow: 10px 10px 5px black;
+    top: -10%;
+    left: 15%;
+    border-radius: 20px;
+    color: black;
+    width: 500px;
+    height: 138px;
+}
+.header {
+    box-shadow: 10px 10px 5px black;
+    margin: auto;
+    border-radius: 20px;
+    width: 70%;
+    height: 170px;
+    background-color: rgb(145, 143,146);
+}
+.space {
+    height: 10px;
+    visibility: hidden;
+} 
+.leftmenue {
+    border-radius: 20px;
+    top: 150px;
+    float: left;
+    position: relative;
+    left: 40%;
+    top: 20%;
+    box-shadow: 10px 10px 5px black;
+    background-color: rgb(145, 143,146);
+    height: 415px;
+    width: 138px;
+}
+.centrepanel {
+    float: left;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    box-shadow: 10px 10px 5px black;
+    background-color: rgb(145, 143,146);
+    height: 567px;
+    width: 995px;
+}
+.rightmenue {
+    float: left;
+    position: relative;
+    left: 60%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px black;
+    background-color: rgb(145, 143,146);
+    height: 415px;
+    width: 138px;
+}
+.column {
+    box-sizing: border-box;
+    float: left;
+    width: 50px;
+    padding: 100px;
+}
+.row {
+    clear: both;
+    display: table;
+}
+.border {
+    position: relative;
+    top: 5px;
+    left: 20%;
+    border: 5px solid red;
+    height: 78px;
+    width: 78px;
+}
+#box {
+    position: relative;
+    top: 5px;
+    left: 15%;
+    width: 96px;
+    height: 48px;
+    }
+.boxes {
+    width: 100%;
+    height: 100%; 
+    float: left;
+    text-align: center;
+    }
+.rows {
+    width: 33.3%;
+    height: 33%;    
+    float: left;
+}
+#tbig {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 20px;
+}
+#day_of_the_42 {
+    position: relative;
+    bottom: 35px;
+    left: 1%;
+    border-radius: 20px;
+    height: 130px;
+}
+#loupe {
+    top: 10px;
+    position: relative;
+    left: 50%;
+    height: 190px;
+}
+#close {
+    left: 865px;
+    height: 30px;
+    position: relative;
+    bottom: 35px;
+}
+#reload {
+    left: 890px;
+    height: 30px;
+    position: relative;
+    bottom: 150px;
+}
+#ft {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin: auto;
+    height: 547px;
+    width: 975px;
+}
+#buttons {
+    padding-top: 5px;
+    padding-left: 20%;
+    border-radius: 25px;
+    height: 77px;
+}
+input {
+    position: relative;
+    left: 10px;
+}
+button {
+    position: relative;
+    left: 10px;
+}
+#buttonsr {
+    padding-top: 10px;
+    padding-left: 30%;
+    border-radius: 20px;
+    height: 80px;
+}
