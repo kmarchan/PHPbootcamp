@@ -14,6 +14,5 @@ while ($in = trim(fgets(STDIN)));
     }
     else 
         print ("'$in' is not a number");
-    // $in = trim(fgets(STDIN));
 }
 ?>
