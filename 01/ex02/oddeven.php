@@ -21,4 +21,5 @@ while ($in = fgets(STDIN))
     }
     echo "Enter a number: ";
 }
+echo "\n";
 ?>
