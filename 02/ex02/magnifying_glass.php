@@ -8,12 +8,18 @@
            if($i = strpos($file, "<a", $i))
            {
                while ($file[$i] !== ">")
+               {
                    $i++;
+               }
                while ($file[++$i] !== "<")
+               {
                    $file[$i] = strtoupper($file[$i]);
+               }
            }
            else
+           {
                break ;
+           }
        }
        return ($file);
    }
@@ -25,12 +31,18 @@
            if ($i = strpos($file, "title=", $i))
            {
                while ($file[$i] !== "\"")
+               {
                    $i++;
+               }
                while ($file[++$i] !== "\"")
+               {
                    $file[$i] = strtoupper($file[$i]);
+               }
            }
            else
+           {
                break ;
+           }
        }
        return ($file);
    }
