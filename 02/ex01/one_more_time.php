@@ -8,6 +8,7 @@
     $ret[2] = lcfirst("$ret[2]");
     $key = array_search($ret[2], $frenchm);
     $ret[2] = $key + 1;
+    date_default_timezone_set('Europe/Paris');
     $in = time();
     $in = $ret[3]."-".$ret[2]."-".$ret[1]." ".$ret[4];
     $out = strtotime($in);
