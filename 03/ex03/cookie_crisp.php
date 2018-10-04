@@ -3,19 +3,19 @@
     $value = $_GET['value'];
     $action = $_GET['action'];
 
-    if (isset($name) && isset($action))
+    if ($name && $action)
     {
-        if ($action == "set" && isset($value))
+        if ($action == "set" && $value)
         {
-            setcookie($name, $value, $time + 86400);
+            setcookie($name, $value, time() + 86400);
         }
-        if ($action == "get" && isset($_COOKIE[$name]))
+        if ($action == "get")
         {
-            echo $_COOKIE[$name]."\n";
+            echo $_COOKIE[$_GET['name']]."\n";
         }
         if ($action == "del")
         {
-            setcookie($name, $value, $time - 86400);
+            setcookie($name, $value, time() - 86400);
         }
     }
 ?>
