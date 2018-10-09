@@ -1,4 +1,4 @@
-INSERT INTO ft_table (`login`, `grup`, `creation_date`)
+INSERT INTO ft_table (`login`, `creation_date`, `grup`)
 	SELECT last_name AS login, birthdate AS creation_date, 'other' AS grup
 	FROM user_card
 	WHERE last_name LIKE '%a%' AND LENGTH(last_name) < 9
