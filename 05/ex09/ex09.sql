@@ -1,3 +1,3 @@
 SELECT COUNT(*) AS 'nb_shor-films'
-FROM `film` 
+FROM db_kmarchan.film 
 WHERE `duration` <= 42 

@@ -1,4 +1,4 @@
-CREATE TABLE ft_table
+CREATE TABLE bd_kmarchan.ft_table
 (
 	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	login VARCHAR(8) NOT NULL DEFAULT 'toto',
