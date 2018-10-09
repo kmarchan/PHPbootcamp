@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(192, 175, 198);
+    color: rgb(240, 212, 249);
+    background-image: url("../26-512.png");
+}
+a {
+    text-decoration: none;
+    color: lavender;
+}
+a:hover {
+    background-color: rgb(99, 93, 105);
+    border-radius: 10px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    background-color:  rgb(133, 110, 175);
+}
+.menue:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(99, 93, 105);
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px  rgb(133, 110, 175);
+    text-decoration: underline;
+    text-decoration-style: solid;
+    background-color:  rgb(133, 110, 175);
+    text-decoration-color:  rgb(133, 110, 175) blueviolet;
+}
+#quickview {
+    visibility: hidden;
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    right: -80px;
+    top: -110px;
+    transform: scale(.7,.7);
+}
+.cart:hover #quickview {
+    display: inline;
+    visibility: visible;
+}
+#pageHeader {
+    background-color: grey;
+    position: relative;
+    margin: auto;
+    font-family: cursive;
+    font-size: 25px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px rgb(133, 110, 175);
+}
+#pageFooter {
+    background-color: grey;
+    position: relative;
+    margin: auto;
+    font-family: cursive;
+    font-size: 25px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px rgb(133, 110, 175);
+}
+h1 {
+    position: relative;
+    font-family: cursive;
+    margin: auto;
+}
+h2 {
+    position: relative;
+    font-family: cursive;
+    margin: auto;
+}
+#logo {
+    height: 60px;
+}
+
+input {
+    position: relative;
+    top: 10px;
+}
+button {
+    position: relative;
+    display: inline-block;
+    top: 20px;
+}
+input {
+    position: relative;
+    top: 10px;
+}
+button {
+    position: relative;
+    top: 20px;
+}
+.box {
+    background-color: grey;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px  rgb(133, 110, 175);
+    top: 100px;
+}
+.menue {
+    background-color: rgb(99, 93, 105);
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px  rgb(133, 110, 175);
+    display: inline;
+}
+.check {
+    background-color: rgb(99, 93, 105);
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px  rgb(133, 110, 175);
+    display: inline; 
+}
+.cart {
+    background-color: rgb(99, 93, 105);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px  rgb(133, 110, 175);
+    display: inline;
+    right: 25px;
+}
+#wrapper {
+    background-color: grey;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px  rgb(133, 110, 175);;
+    top: 100px;
+    margin: auto;
+}
+
+#prod {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    left: 10px;
+    border-radius: 30px;
+}
