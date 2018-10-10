@@ -3,10 +3,10 @@
         private $fght;
         function recruit($sold) {
             if (method_exists($sold, 'fight'))
-                $fght = ("* ".$sold->fight(). PHP_EOL);
+                $fght = ($sold->fight());
         }
         function fight() {
-            print ($fght. PHP_EOL);
+            print ($fght);
         }
     }
 ?>
