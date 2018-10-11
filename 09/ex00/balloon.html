@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>balloon</title>
+        <style>
+            body {
+                background-color: grey;
+            }
+            #balloon {
+                border-radius: 100%;
+                background-color: red; 
+                height: 200px;
+                width: 200px;
+                margin: auto;
+            }
+        </style>
+        <script>
+            var c = {0: '#ff0000', 1: '#00ff00', 2: '#0000ff'};
+            var ci = 0;
+            var hw = 200
+  
+            window.onload = function() {
+                balloon = document.getElementById("balloon");
+                balloon.addEventListener("click", blow);
+                balloon.addEventListener("mouseout", shrink);
+            }
+           function shrink() {
+                hw -= 5;
+                if (hw < 200)
+                    hw = 200;
+                ci--;
+                if (ci < 0)
+                    ci = 2;
+                action(ci);
+            }
+            function blow() {
+                hw += 10;
+                if (hw > 420)
+                    hw = 200;
+                ci++;
+                if (ci > 2)
+                    ci = 0;
+                action(ci);
+            }
+            function action(ci) {
+                balloon.style.height = hw + 'px';
+                balloon.style.width = hw + 'px';
+                balloon.style.backgroundColor = c[ci];
+            }
+        </script>
+    </head>
+    <body>
+        <div class="balloon" id="balloon"></div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: blueviolet;
+            }
+            .calc {
+                position: relative;
+                margin: auto;
+                background-color: grey;
+                height: 200px;
+                width: 600px;
+                border-radius: 30px;
+                text-align: center;
+                top: 200px;
+            }
+        </style>
+        <script>
+            var f;
+            var s;
+            var op;
+
+            window.onload = function() {
+                tryMe = document.getElementById("submit");
+                tryMe.addEventListener("click", maths);
+            }
+
+            function maths() {
+            var f = Number(f.value);
+            var s = Number(s.value);
+            var op = document.querySelector("#option")
+            printf("f %d, op %c, s %d", f, op, s);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="calc">
+            <h1>CALCULATOR</h1>
+            <input type="number" id="f">
+            <select name="option" id="option">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input type="number" id="s">
+            <br>
+            <br>
+            <button id="submit">Try me!</button>
+        </div>
+    </body>
+</html>
