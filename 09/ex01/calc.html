@@ -21,33 +21,64 @@
             var op;
 
             window.onload = function() {
-                tryMe = document.getElementById("submit");
-                tryMe.addEventListener("click", maths);
+                tryMe = document.querySelector("#doc")
+                setInterval("alert('Please, use me...')",  30000)
             }
 
             function maths() {
-            var f = Number(f.value);
-            var s = Number(s.value);
-            var op = document.querySelector("#option")
-            printf("f %d, op %c, s %d", f, op, s);
+                var f = Number(document.form.f.value);
+                f = parseInt(f);
+                var s = Number(document.form.s.value);
+                s = parseInt(s);
+                var op = document.getElementById("option");
+                var op = op.options[op.selectedIndex].value;
+                if (f < 0 || s < 0)
+                    alert("Error :(");
+                else if (op == '+') {
+                    answer (f + s);
+                }
+                else if (op == '-') {
+                    answer (f - s);
+                }
+                else if (op == '*') {
+                    answer (f * s);
+                }
+                else if (op == '/') {
+                    if (s == 0)
+                        answer("It's over 9000!")
+                    else 
+                        answer (f / s);
+                }
+                else if (op == '%') {
+                    if (s == 0)
+                        answer("It's over 9000!")
+                    else 
+                        answer (f % s);
+                }
+                console.log(f, op, s);
+            }
+
+            function answer(ans) {
+                console.log(ans);
+                alert(ans);
             }
         </script>
     </head>
     <body>
-        <div class="calc">
-            <h1>CALCULATOR</h1>
-            <input type="number" id="f">
-            <select name="option" id="option">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-                <option value="%">%</option>
-            </select>
-            <input type="number" id="s">
-            <br>
-            <br>
-            <button id="submit">Try me!</button>
+        <div id="doc" class="calc">
+            <form name="form" action="values" onsubmit="return false">
+                <h1>CALCULATOR</h1>
+                <input type="number" id="f" name="f">
+                <select name="option" id="option">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                </select>
+                <input type="number" id="s" name="s">
+                <input onclick="maths()" id="submit" value="Try me !" type="submit">
+            </form>
         </div>
     </body>
 </html>
